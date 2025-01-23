@@ -148,10 +148,11 @@ resource "aws_codebuild_project" "build_project" {
     type                       = "LINUX_CONTAINER"
   }
 
-  source {
+   source {
     type      = "CODEPIPELINE"
-    buildspec = "config/buildspec.yml"
+    buildspec = "buildspec.yml"  # 경로 수정
   }
+
 }
 
 # CodePipeline IAM 역할
