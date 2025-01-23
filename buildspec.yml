@@ -17,10 +17,8 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - echo "Copying files to artifact..."
-      - cp -r source-code/* .
 
 artifacts:
   files:
     - '**/*'
-  base-directory: '.'
+  base-directory: 'source-code'
