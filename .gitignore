@@ -1,0 +1,12 @@
+# Terraform 파일
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# 시스템 파일
+.DS_Store
+
+# IDE 설정
+.idea/
+.vscode/
